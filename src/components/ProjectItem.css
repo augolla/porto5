@@ -1,0 +1,6 @@
+.ProjectItem{
+    transition:all .4s;
+}
+.ProjectItem:hover{
+    transform: scale(1.03);
+}

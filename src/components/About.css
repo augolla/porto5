@@ -1,0 +1,17 @@
+.About{
+  color: white;
+  font-family: 'Cousine';
+  margin-bottom: 200px;
+}
+.Title1{
+  text-align: center;
+  font-family: 'Cousine';
+  border-bottom: 2px solid;
+  width:70%;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+.about h6{
+    transition: .4s ease;
+    font-family: 'Cousine',monospace;
+}

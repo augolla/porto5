@@ -1,0 +1,53 @@
+.Contact{
+  margin-top: 90px;
+  background: #0A192F;
+  color: white;
+  min-height: 700px;
+}
+.Contact h3{
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #CCD6F6;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+.Title5{
+  text-align: center;
+  font-family: 'Cousine';
+  border-bottom: 2px solid #64FFDA;
+  width:70%;
+  margin-bottom: 50px;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.Contact p{
+  font-size: 15px;
+}
+.form-control{
+  border-radius: 0px;
+  background: #172A45;
+  border: none;
+  caret-color: #64FFDA;
+  transition: .3s all
+}
+.form-control:focus{
+  border-bottom: 1.5px solid #64FFDA;
+  background: #172A45;
+}
+.form-control::placeholder{
+  font-size: 14px;
+}
+
+.emailText{
+  height: 200px !important;
+}
+
+.Contact .btn{
+  font-size: 10px;
+}
+.Contact .btn:hover{
+  color: #64FFDA;
+}

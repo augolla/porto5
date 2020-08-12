@@ -1,0 +1,53 @@
+.NavBar{
+  transition: all .3s ease-in-out;
+  min-height: 75px;
+  transition: background .4s;
+}
+.NavBar .nav-item{
+  margin-right: 3.5vw;
+  transition: all .3s ease-in-out;
+  font-weight: bold;
+}
+.NavBar .nav-item:hover{
+  cursor: pointer;
+}
+.bar1,.bar2,.bar3{
+  width:40px;
+  border: 1px solid;
+  display: block;
+}
+.bar1{
+    margin-bottom: 10px;
+}
+.bar3{
+    margin-top: 10px;
+}
+.navbar-collapse{
+  position: relative;
+  padding-left: 0px;
+  margin-left: 0px;
+  width: 100%;
+  /* background: #172A45; */
+}
+.NavBar .active{
+  color: #57DDC1;
+}
+
+.toggle-line{
+  display: flex;
+  align-items: center;
+  width:44px;
+  height:20px;
+  border-radius: 11px;
+  transitions:.4s all;
+
+}
+.toggle-circle{
+  transition: .4s all;
+  position: relative;
+  left:1px;
+  height:22px;
+  width: 22px;
+  border-radius: 50%;
+  border:1px solid;
+}
