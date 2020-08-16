@@ -1,4 +1,5 @@
 .Home{
+  margin-top: 30px;
   min-height: 500px;
   scroll-behavior: smooth;
   padding-top: 40px;
@@ -7,12 +8,13 @@
   margin-bottom: 150px;
 }
 .nameIs{
-
+  font-size: 1em;
 }
 .Title{
   color: #CCD6F6;
   font-family: 'Cousine',monospace;
   font-weight: 900;
+  font-size: 3em;
 }
 .About-me{
   margin-bottom: 50px;
@@ -28,6 +30,7 @@
 .Roles h5{
   transition: .4s ease;
   font-family: 'Cousine',monospace;
+  font-size: 1.4em;
 }
 /* .Roles h5:hover{
   text-shadow: -3px 0px 15px #64FFDA,-3px 0px 15px #64FFDA,-3px 0px 15px #64FFDA;
@@ -37,7 +40,7 @@
   height: 45px;
   width:100px;
   font-family: sans-serif;
-  border:.6px solid #64FFDA;
+  border:1px solid #64FFDA;
   border-radius: 1.4px;
   transition: .4s ease;
   letter-spacing: 2.5px;
@@ -47,7 +50,7 @@
 }
 .btn:hover{
   background: #10293B;
-  transform: rotateY(40deg);
+  transform: rotateY(25deg);
 }
 .btn p{
   font-size: 13px;

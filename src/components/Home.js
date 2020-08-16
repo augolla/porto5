@@ -19,11 +19,15 @@ function Home(params) {
                             <div><h5 className='fixen'>&lt;Software Engineer/&gt;</h5></div>
                             <div><h5 className='fixen'>&lt;Data Scientist/&gt;</h5></div>
                             <h6 style={{marginTop:'50px'}}>
-                                I am a full-stack software engineer based in Nairobi, Kenya. I specialize in UI/UX design 
-                                and development of fullstack web applications.
+                                I am a full-stack software engineer based in Nairobi, Kenya .
+                            </h6>
+                            <h6>
+                                I specialize in UI/UX design and development of fullstack web applications .
                             </h6>
                             <h3>{}</h3>
-                            <h6>I work on browser-based applications from frontend/backend design to deployment and everything in between.</h6>
+                            <h6>
+                                I work on browser-based applications from frontend/backend design to deployment and everything in between .
+                            </h6>
                         </div>
                         <Link activeClass='active' spy={true} offset={-80} duration={620} to="projects">
                             <button className='btn btn-outline ' title="See Projects" 

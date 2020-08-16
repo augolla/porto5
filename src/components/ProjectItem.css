@@ -4,3 +4,12 @@
 .ProjectItem:hover{
     transform: scale(1.03);
 }
+
+.ProjectItem ul{
+    display: inline-flex;
+}
+
+.ProjectItem li{
+    list-style: none;
+    margin-right:10px;
+}

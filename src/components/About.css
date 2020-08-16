@@ -1,6 +1,6 @@
 .About{
   color: white;
-  font-family: 'Cousine';
+  /* font-family: 'Cousine'; */
   margin-bottom: 200px;
 }
 .Title1{
@@ -11,7 +11,29 @@
   margin-bottom: 50px;
   font-weight: 700;
 }
-.about h6{
-    transition: .4s ease;
-    font-family: 'Cousine',monospace;
+
+.About h6{
+  font-weight: 500;
+  line-height: 40px;
+  font-size: 1em;
+}
+.About h5{
+  font-weight: 500;
+  line-height: 40px;
+  font-size: 1em;
+}
+
+
+.Title2{
+  text-align: left;
+  font-family: 'Cousine';
+  border-bottom: 2px solid;
+  width:70%;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.col-md-6 p{
+  font-size: 12px;
 }

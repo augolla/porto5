@@ -1,5 +1,5 @@
 import React,{useContext} from 'react';
-import Navbar, { ThemeContext, ThemeProvider} from './components/Navbar'
+import Navbar, { ThemeContext} from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'

@@ -34,7 +34,7 @@
   transition: .3s all
 }
 .form-control:focus{
-  border-bottom: 1.5px solid #64FFDA;
+  border-bottom: 1.5px solid;
   background: #172A45;
 }
 .form-control::placeholder{
@@ -46,8 +46,31 @@
 }
 
 .Contact .btn{
-  font-size: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  border:1px solid;
+
 }
 .Contact .btn:hover{
-  color: #64FFDA;
+  transform: rotateY(25deg);
+}
+
+
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
 }
