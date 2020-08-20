@@ -22,6 +22,7 @@ function ProjectItem(props){
                 </div>
                 <div className='mx-3 mt-2 text-left'>
                     <p style={{color:cts.projoColor,fontSize:"15px"}}>{props.projectDetails}</p>
+                    {/* <p style={{ color: cts.projoColor, fontSize: "15px" }}>{props.projectDetails}</p> */}
                 </div>
                 <div className=" projectIcons d-flex justify-content-center">
                     <div className='external-icon' style={{ cursor: 'pointer', color: cts.whiteDark, marginRight: '20px' }}>

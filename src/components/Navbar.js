@@ -15,12 +15,15 @@ function Navbar(){
             bar2 = document.querySelector('.bar2'),
             bar3 = document.querySelector('.bar3'),
             toggle = document.querySelector('.navbar-toggler'),
-            navItem = document.querySelector('.nav-item'),
+            navItem = document.querySelectorAll('.nav-item'),
             bars=[bar1,bar2,bar3],
             toggleLine=document.querySelector('.toggle-line'),
-            toggleCircle=document.querySelector('.toggle-circle')
-        
-        
+            toggleCircle=document.querySelector('.toggle-circle'),
+            navitems=document.querySelectorAll('a.nav-item')
+
+       navitems.forEach(item=>{
+           item.style.color=cts.whiteDarker
+       })
         bars.forEach(bar=>bar.style.borderColor=cts.green)
         toggleCircle.style.background=cts.darkBlue
         toggleCircle.style.borderColor=cts.green
@@ -49,8 +52,17 @@ function Navbar(){
                 open = true
             }
         })
-        navItem.addEventListener('mouseover',e=>{
-            navItem.style.color=cts.green
+        navItem.forEach(item=>{
+            item.addEventListener('mouseenter',e=>{
+                item.style.color=cts.green
+            })
+            item.addEventListener('mouseleave', e => {
+                item.style.color = cts.whiteDarker
+            })
+            item.addEventListener('focus', e => {
+                console.log('clicked');
+            })
+            
         })
     })
     const cts=useContext(ThemeContext)
@@ -70,10 +82,21 @@ function Navbar(){
 
             <div className='collapse navbar-collapse justify-content-end align-items-center p-0 m-0' id='everything2'>
                 <nav className='navbar-nav m-0 p-0 d-flex justify-content-center'>
-                    <Link style={{color:cts.whiteDarker}} activeClass='active' spy={true} offset={-80} duration={620} to="home" className='nav-item  nav-link ' smooth={true} >Home</Link>
-                    <Link style={{color:cts.whiteDarker}} activeClass='active' spy={true} offset={-80} duration={620} to="about" className='nav-item nav-link ' smooth={true} >About</Link>
-                    <Link style={{color:cts.whiteDarker}} activeClass='active' spy={true} offset={-80} duration={620} to="projects" className='nav-item nav-link ' smooth={true} >Works/Projects</Link>
-                    <Link style={{color:cts.whiteDarker}} activeClass='active' spy={true} offset={-80} duration={620} to="contact" className='nav-item nav-link ' smooth={true} >Contacts</Link>
+                    <Link activeClass='active' 
+                    spy={true} offset={-80} duration={620} to="home" className='nav-item nav-link' smooth={true} >Home
+                    </Link>
+
+                    <Link activeClass='active' 
+                    spy={true} offset={-80} duration={620} to="about" className='nav-item nav-link' smooth={true} >About
+                    </Link>
+                    
+                    <Link activeClass='active' 
+                    spy={true} offset={-80} duration={620} to="projects" className='nav-item nav-link' smooth={true} >Works/Projects
+                    </Link>
+
+                    <Link activeClass='active' 
+                    spy={true} offset={-80} duration={620} to="contact" className='nav-item nav-link' smooth={true} >Contacts
+                    </Link>
                 </nav>
             </div>
         </nav>
@@ -115,7 +138,7 @@ export class ThemeProvider extends React.Component {
                     projoTech: '#8892B0',
                     light: false,
                 })
-                toggleCircle.style.left='1px'
+                toggleCircle.style.left='0.4px'
             }
             else {
                 this.setState({
@@ -131,7 +154,7 @@ export class ThemeProvider extends React.Component {
                     projoTech: '#000000',
                     light: true
                 })
-                toggleCircle.style.left = '23px'
+                toggleCircle.style.left = '23.6px'
             }
         })
     }

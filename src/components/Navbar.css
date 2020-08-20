@@ -29,9 +29,6 @@
   width: 100%;
   /* background: #172A45; */
 }
-.NavBar .active{
-  color: #57DDC1;
-}
 
 .toggle-line{
   display: flex;

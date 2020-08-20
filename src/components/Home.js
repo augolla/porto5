@@ -8,7 +8,6 @@ function Home(params) {
 
     })
     let cts=useContext(ThemeContext)
-    console.log(cts);
     return(
             <div className='Home' style={{background:cts.darkBlue}}>
                 <div className='container d-flex home-container'>
@@ -25,11 +24,8 @@ function Home(params) {
                                 I specialize in UI/UX design and development of fullstack web applications .
                             </h6>
                             <h3>{}</h3>
-                            <h6>
-                                I work on browser-based applications from frontend/backend design to deployment and everything in between .
-                            </h6>
                         </div>
-                        <Link activeClass='active' spy={true} offset={-80} duration={620} to="projects">
+                    <Link activeClass='active' spy={true} offset={-80} duration={620} smooth={true} to="projects">
                             <button className='btn btn-outline ' title="See Projects" 
                             style={{background:cts.darkBlue,borderColor:cts.green}}>
                                 <p style={{color:cts.green}}>View My Work</p>

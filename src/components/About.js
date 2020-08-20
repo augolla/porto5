@@ -22,7 +22,9 @@ function About() {
                             I am an independent software engineer based in Nairobi, Kenya.
                         </h5>
                         <br/>
-                        <h5>I enjoy building things that live in the web .</h5>
+                        <h5>
+                            I work on browser-based applications from frontend/backend design to deployment and everything in between.
+                        </h5>
                         <br />
                         <h5>
                             Outside of websites, I also develop Machine Learning/A.I models.This includes other math-intensive aspects of data science.
@@ -59,10 +61,10 @@ function About() {
                                 <li><p>GraphQl</p></li>
                                 <li><p>JQuery</p></li>
                                 <li><p>Bootstrap</p></li>
-                                <li><p>MongoDb</p></li>
+                                <li><p>Node|Express</p></li>
                             </ul>
                             <ul className='col-md-4 col mt-3'>
-                                <li><p>Node|Express</p></li>
+                                <li><p>MongoDb</p></li>
                                 <li><p>MySQL</p></li>
                                 <li><p>HTML/CSS</p></li>
                             </ul>
