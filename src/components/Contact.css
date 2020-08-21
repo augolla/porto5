@@ -30,8 +30,8 @@
   border-radius: 0px;
   background: #172A45;
   border: none;
+  transition: .3s all;
   caret-color: #64FFDA;
-  transition: .3s all
 }
 .form-control:focus{
   border-bottom: 1.5px solid;
@@ -47,7 +47,7 @@
 
 .Contact .btn{
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   border:1px solid;
 
 }

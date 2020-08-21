@@ -35,7 +35,7 @@ function About() {
                         </h5>
                         <br />
                         <h5>
-                            Shortly after joining University, I established Divonn where I work on a wide variety of interesting and meaningful projects on a daily basis.
+                            Shortly after joining University, I joined the development team at Divonn where I work on a wide variety of interesting and meaningful projects on a daily basis.
                         </h5>
                         <br />
                         <h5>Here are some of the tools I use...</h5>

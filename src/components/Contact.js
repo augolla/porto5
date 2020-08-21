@@ -10,6 +10,7 @@ function Contact() {
         subject: '',
         message: ''
     })
+    const [notSent,setnotSent]=useState(true)
 
     const handleChange = (event) => {
         event.preventDefault()
@@ -27,32 +28,44 @@ function Contact() {
             )
             .then()
             .catch()
-        console.log(form);
 
+        setnotSent(false)
     }
     const cts=useContext(ThemeContext)
     return (
         <div className='Contact container' style={{background:cts.darkBlue}}>
             <h1 className='Title5' style={{borderColor:cts.green,color:cts.whiteWhite}}>Contact Me</h1>
-            <form action="" className="row" onSubmit={handleSubmit}>
-                <div className="form-group col-12 col-md-7">
-                    <input style={{borderColor:cts.green}} type="text" className="form-control" onChange={handleChange} name='name' placeholder='Your Name(Optional)'/>
+            {
+            notSent?
+            <form action="" className="row form" onSubmit={handleSubmit}>
+                <div className="form-group col-12 col-md-7" >
+                    <input style={{ borderColor: cts.green, background: cts.projoBg,color: cts.whiteDark}} type="text" className="form-control" onChange={handleChange} name='name' placeholder='Your Name(Optional)'/>
                 </div>
                 <div className="form-group col-12 col-md-7">
-                    <input style={{borderColor:cts.green}} type="email" className="form-control" onChange={handleChange} name='email' placeholder='Your Email Address'/>
+                    <input style={{ borderColor: cts.green, background: cts.projoBg,color: cts.whiteDark}} type="email" className="form-control" onChange={handleChange} name='email' placeholder='Your Email Address'/>
                 </div>
                 <div className="form-group col-12 col-md-7">
-                    <input style={{borderColor:cts.green}} type="text" className="form-control" onChange={handleChange} name="subject" placeholder="Email subject"/>
+                    <input style={{ borderColor: cts.green, background: cts.projoBg,color: cts.whiteDark}} type="text" className="form-control" onChange={handleChange} name="subject" placeholder="Email subject"/>
                 </div>
                 <div className="form-group col-12 col-md-7">
-                    <textarea style={{ borderColor: cts.green }} className='form-control' id="" cols="30" rows="10" onChange={handleChange} name="message" placeholder="">
+                    <textarea style={{ borderColor: cts.green, background: cts.projoBg,color: cts.whiteDark }} className='form-control' id="" cols="30" rows="10" onChange={handleChange} name="message" placeholder="">
 
                     </textarea>
                 </div>
                 <div className="col-7">
                     <button type="submit" className="btn btn col-6" style={{borderColor:cts.green,color:cts.green}}>Send</button>
                 </div>
-            </form>
+            </form>:
+                <div className="Contact container" >
+                    <div className='d-flex justify-content-center' style={{ color: cts.whiteDark }}>
+                        <h2>Message Successfully Sent</h2>
+                    </div>
+
+                    <div className='d-flex justify-content-center' style={{ color: cts.whiteDarker }}>
+                        <h4>I will get back to you as soon as possible </h4>
+                    </div>
+                </div>
+                }
         </div>
     )
 }
